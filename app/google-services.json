@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "477992598313",
+    "firebase_url": "https://wallpapers-hd-279b2.firebaseio.com",
+    "project_id": "wallpapers-hd-279b2",
+    "storage_bucket": "wallpapers-hd-279b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477992598313:android:58a51f13c58b8368",
+        "android_client_info": {
+          "package_name": "techdoctorbd.com.wallpapershd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477992598313-59hr5ic36poacqvu0k47ic1lr26fg665.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ6jbJ28aqZBOk-sO_kwy75R2guskiXYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
