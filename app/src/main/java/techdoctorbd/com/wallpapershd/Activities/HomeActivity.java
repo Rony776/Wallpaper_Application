@@ -1,4 +1,4 @@
-package techdoctorbd.com.wallpapershd;
+package techdoctorbd.com.wallpapershd.Activities;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -28,6 +28,7 @@ import java.security.Permissions;
 
 import techdoctorbd.com.wallpapershd.Adapter.MyFragmentAdapter;
 import techdoctorbd.com.wallpapershd.Common.Common;
+import techdoctorbd.com.wallpapershd.R;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

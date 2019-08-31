@@ -1,14 +1,12 @@
-package techdoctorbd.com.wallpapershd;
+package techdoctorbd.com.wallpapershd.Activities;
 
 import android.content.Intent;
-import android.graphics.ColorSpace;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -26,6 +24,7 @@ import com.squareup.picasso.Picasso;
 import techdoctorbd.com.wallpapershd.Common.Common;
 import techdoctorbd.com.wallpapershd.Interface.ItemClickListener;
 import techdoctorbd.com.wallpapershd.Model.WallpaperItem;
+import techdoctorbd.com.wallpapershd.R;
 import techdoctorbd.com.wallpapershd.ViewHolder.ListWallpaperViewHolder;
 
 public class ListWallpaperActivity extends AppCompatActivity {
@@ -40,14 +39,14 @@ public class ListWallpaperActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_wallpaper);
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar_wallpaper_list);
+        Toolbar toolbar =findViewById(R.id.toolbar_wallpaper_list);
         toolbar.setTitle(Common.SELECTED_CATEGORY);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_wallpaper_list);
+        recyclerView = findViewById(R.id.recycler_wallpaper_list);
         recyclerView.setHasFixedSize(true);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);

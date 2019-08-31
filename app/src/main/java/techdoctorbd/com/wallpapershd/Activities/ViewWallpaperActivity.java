@@ -1,4 +1,4 @@
-package techdoctorbd.com.wallpapershd;
+package techdoctorbd.com.wallpapershd.Activities;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -20,6 +20,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -32,6 +33,7 @@ import java.util.UUID;
 import dmax.dialog.SpotsDialog;
 import techdoctorbd.com.wallpapershd.Common.Common;
 import techdoctorbd.com.wallpapershd.Helper.DownloadHelper;
+import techdoctorbd.com.wallpapershd.R;
 
 
 public class ViewWallpaperActivity extends AppCompatActivity {
@@ -40,6 +42,7 @@ public class ViewWallpaperActivity extends AppCompatActivity {
     FloatingActionButton floatingActionButton,downloadButton;
     ImageView imageView;
     CoordinatorLayout rootlayout;
+    TextView description;
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -95,19 +98,24 @@ public class ViewWallpaperActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_wallpaper);
 
-        Toolbar toolbar = findViewById(R.id.toolbar_wallpaper_list);
+        Toolbar toolbar = findViewById(R.id.toolbar_view_wallpaper);
         setSupportActionBar(toolbar);
         rootlayout = findViewById(R.id.rootlayout);
+        description = findViewById(R.id.wallpaper_description);
         collapsingToolbarLayout = findViewById(R.id.collapsing_layout_WP);
         collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.CollapsedAppBar);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppBar);
 
         collapsingToolbarLayout.setTitle(Common.SELECTED_CATEGORY);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         imageView =findViewById(R.id.image_view_full);
         Picasso.with(this)
                 .load(Common.Selected_Wallpaper.getImageLink())
                 .into(imageView);
+        description.setText(Common.Selected_Wallpaper.getDescription());
 
         floatingActionButton = findViewById(R.id.floating_button);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {

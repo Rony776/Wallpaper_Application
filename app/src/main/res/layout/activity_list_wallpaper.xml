@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#ebebec"
     android:layout_height="match_parent"
-    tools:context=".ListWallpaperActivity">
+    tools:context=".Activities.ListWallpaperActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"

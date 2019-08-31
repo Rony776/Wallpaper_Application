@@ -1,8 +1,6 @@
 package techdoctorbd.com.wallpapershd.Fragment;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -23,7 +21,7 @@ import com.squareup.picasso.Picasso;
 
 import techdoctorbd.com.wallpapershd.Common.Common;
 import techdoctorbd.com.wallpapershd.Interface.ItemClickListener;
-import techdoctorbd.com.wallpapershd.ListWallpaperActivity;
+import techdoctorbd.com.wallpapershd.Activities.ListWallpaperActivity;
 import techdoctorbd.com.wallpapershd.Model.CategoryItem;
 import techdoctorbd.com.wallpapershd.R;
 import techdoctorbd.com.wallpapershd.ViewHolder.CategoryViewHolder;
@@ -131,7 +129,7 @@ public class CategoryFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_category, container, false);
 
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_category);
+        recyclerView = view.findViewById(R.id.recycler_category);
         recyclerView.setHasFixedSize(true);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(),2);
         recyclerView.setLayoutManager(gridLayoutManager);

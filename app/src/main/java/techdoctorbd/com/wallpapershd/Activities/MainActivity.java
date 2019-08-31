@@ -1,9 +1,11 @@
-package techdoctorbd.com.wallpapershd;
+package techdoctorbd.com.wallpapershd.Activities;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import techdoctorbd.com.wallpapershd.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
                 finish();
             }
-        }, 500);
+        }, 2000);
     }
 }

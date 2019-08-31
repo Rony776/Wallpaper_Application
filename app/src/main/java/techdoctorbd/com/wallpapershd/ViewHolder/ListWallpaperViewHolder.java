@@ -10,7 +10,7 @@ import techdoctorbd.com.wallpapershd.R;
 
 public class ListWallpaperViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    ItemClickListener itemClickListener;
+   private ItemClickListener itemClickListener;
 
     public ImageView wallpaper;
 
@@ -20,7 +20,7 @@ public class ListWallpaperViewHolder extends RecyclerView.ViewHolder implements 
 
     public ListWallpaperViewHolder(@NonNull View itemView) {
         super(itemView);
-        wallpaper = (ImageView)itemView.findViewById(R.id.image_list_wallpaper);
+        wallpaper = itemView.findViewById(R.id.image_list_wallpaper);
         itemView.setOnClickListener(this);
     }
 

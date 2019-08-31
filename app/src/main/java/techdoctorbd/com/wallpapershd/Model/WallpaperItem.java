@@ -4,13 +4,15 @@ public class WallpaperItem {
 
     private String ImageLink;
     private String CategoryID;
+    private String Description;
 
     public WallpaperItem() {
     }
 
-    public WallpaperItem(String imageLink, String categoryID) {
-        this.ImageLink = imageLink;
-        this.CategoryID = categoryID;
+    public WallpaperItem(String imageLink, String categoryID, String description) {
+        ImageLink = imageLink;
+        CategoryID = categoryID;
+        Description = description;
     }
 
     public String getImageLink() {
@@ -27,5 +29,13 @@ public class WallpaperItem {
 
     public void setCategoryID(String categoryID) {
         CategoryID = categoryID;
+    }
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
     }
 }
